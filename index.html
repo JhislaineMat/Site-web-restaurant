@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="stylesheet" href="css/responsif.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--Navbar debut-->
+        <br><br>
+        <nav class="navbar">
+            <div class="nav1">
+                <ul id="logo">
+                    <li><img src="images/res-logo.png" alt=""></li>
+                    <li><b>EAT & DRINK</b></li>
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul id="menubar">
+                    <li> <a href="#" class="active" >Accueil</a> </li>
+                    <li><a href="ih.html" >Repas</a></li>
+                    <li><a href="#">Panier</a></li>
+                    <li><a href="#" >Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav3">
+                <ul>
+                    <li><span id="elt" style="color:white;padding: 5px; background-color: #df2020;border-radius: 50%;display: block;
+                        margin-top: -28px;">0</span><i class="fa fa-shopping-basket" id="shop" onclick="liste()"></i>
+                        <ul id="market"></ul>
+                    </li>
+                    <li><i class="fa fa-user"></i></li>
+                    <li id="Mb">
+                        <i class="fa fa-bars" ></i>
+                        <ul id="contents">
+                            <li> <a href="#">Accueil</a> </li>
+                            <li><a href="#">Repas</a></li>
+                            <li><a href="#">Panier</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--Fin navbar-->
+        <!--debut header-->
+        <header class="head">
+            <div class="head1">
+                <br><br>
+                <h2>Commande Rapide et Express</h2>
+                <h1>AVEZ-VOUS FAIM?</h1>
+                <h2><b>Attendez juste la nourriture a votre porte</b></h2>
+                <p>Jamais trop de frites, un bon plat de maccabo est ce qu'il vous faut.Savourez les meilleures saveurs du pays!!!</p><br><br>
+                <a href="#" id="commander">Commander maintenant <span id="fle"></span></i></a>
+                <br><br>
+                <ul>
+                    <li><i class="fa fa-car"></i> Livraison garantir </li>
+                    <li><i class="fa fa-check-circle"></i> Parcours 100% securise</li>
+                </ul>
+                
+            </div>
+            <div class="head2">
+                <img src="images/hero.png" alt="">
+            </div>
+        </header>
+        <!--fin header-->
+        <!--debut bar-->
+        <div class="bar">
+            <ul>
+                <li><span><img src="images/category-01.png" alt=""></span>  <span id="text">Burger</span> </li>
+                <li><span><img src="images/category-02.png" alt=""></span> <span id="text">Pizza</span> </li>
+                <li><span ><img src="images/category-03.png" alt=""></span>  <span id="text">Spaghetti Saute</span> </li>
+                <li><span> <img src="images/category-04.png" alt=""></span> <span id="text">Viande</span> </li>
+            </ul>
+        </div>
+        <!--fin bar-->
+        <!--debut service-->
+        <br><br>
+        <div class="service">
+            <h2 >Ce que nous servons</h2>
+            <h3>Restez simplement a la maison <br>Nous allons prendre soin de vous</h3>
+            <p>un bon plat de maccabo est ce qu'il vous faut.Savourez les meilleures saveurs du pays <br>un bon plat de maccabo est ce qu'il vous faut.Savourez les meilleures saveurs du pays</p>
+            <div class="article">
+                <div class="art">
+                    <img src="images/service-01.png">
+                    <h3>Livraison Rapide</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="art">
+                    <img src="images/service-02.png">
+                    <h3>Super Repas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="art">
+                    <img src="images/service-03.png">
+                    <h3>Ramassage Express</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+
+            </div>
+        </div>
+        <!--fin service-->
+        <!--debut food-->
+        <div class="food">
+            <h1>Popular Food</h1>
+            <ul>
+                <li><a href="#bugger1" id="blanc">AI</a></li>
+                <li><a href="#bugger2"><span style="margin: auto;"><img src="images/hamburger.png" alt=""></span> <span class="f">Pizza</span></a></li>
+                <li><a href="#bugger3"><span style="margin: auto;"><img src="images/fried-potatoes.png" alt=""></span> <span class="f">Burger</span></a></li>
+                <li><a href="#bugger4"><span style="margin: auto;"><img src="images/bread.png" alt=""></span> <span class="f">Drink</span></a></li>
+            </ul>
+        </div><br><br>
+        <!--fin food-->
+        <!--debut buger-->
+        <div class="buger">
+            <div class="bug" id="bugger3">
+                <div class="bug1">
+                    <img src="images/product_2.3.jpg" alt="">
+                    <h3 id="nomp">Chicken Pizza</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <img src="images/product_01.1.jpg" alt="">
+                    <h3>Chicken Burger</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <img src="images/product_01.3.jpg" alt="">
+                    <h3>Chicken Burger</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+   
+                <div class="bug1">
+                    <img src="images/product_01.jpg" alt="">
+                    <h3>Chicken Burger</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <img src="images/product_2.2.jpg" alt="">
+                    <h3>Chicken Burger</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <img src="images/product_2.1.jpg" alt="">
+                    <h3>Chicken Burger</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="buger" id="bugger2">
+            <h1 style="text-align: center; color:#212245">Hoot Pizza</h1><br><br>
+            <div class="bug">
+                <div class="bug1">
+                    <img src="images/product_4.1.jpg" alt="">
+                    <h3>Mexican green wave</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <img src="images/product_4.2.jpg" alt="">
+                    <h3>Double Cheese Margheritta</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <img src="images/product_4.3.png" alt="">
+                    <h3>Pizza with Mushroom</h3>
+                    <ul>
+                        <li id="prix">3000 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="buger" id="bugger4">
+            <h1 style="text-align: center; color:#212245">Drink</h1><br><br>
+            <div class="bug">
+                <div class="bug1">
+                    <img src="images/drinks1.jpg" alt="">
+                    <h3 id="nomp">Coca-Cola</h3>
+                    <ul>
+                        <li id="prix">1500 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <br><br><br><br><br>
+                    <img src="images/fanta.png" alt="">
+                    <h3>Fanta</h3>
+                    <ul>
+                        <li id="prix">1500 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+                <div class="bug1">
+                    <br><br><br><br><br>
+                    <img src="images/Pepsi.jpg" alt="">
+                    <h3>Pepsi</h3>
+                    <ul>
+                        <li id="prix">1500 fcfa</li>
+                        <li id="val" onclick="ajouterArt()">Add to card</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--fin buger-->
+        <br><br><br>
+        <footer>
+            <div class="foo">
+              
+                <ul  class="fof">
+                    <li><img src="images/res-logo.png" alt=""></li>
+                    <li><b>EAT & DRINK</b></li>
+                    <li>un bon plat de maccabo est ce qu'il vous faut.Savourez les meilleures saveurs du pays
+                        un bon plat de maccabo est ce qu'il vous faut.Savourez les meilleures saveurs du pays</li>
+                </ul>
+                
+                
+
+                <ul  class="fof">
+                    <li><h3><b>Heure de Livraison</b></h3></li>
+                    <li><b>Dimanche-Lundi</b> </li>
+                    <li><em>10H-00   23H00</em></li>
+                    <br>
+                    <li><b>Vendredi-Samedi</b> </li>
+                    <li><em>Fermer</em></li>
+                </ul>
+
+                <ul  class="fof">
+                    <li><h3><b>Contact</b></h3></li>
+                    <li><b>Yaounde CMR Ngoa-Ekele</b> </li>
+                    <br>
+                    <br>
+                    <li><b>Phone: +237 694 000 000 </b> </li>
+                    <li><b>Email: eatdrink@gmail.com</b></li>
+                </ul>
+            
+                <ul  class="fof">
+                    <li><h3><b>NewsLetter</b></h3></li>
+                    <li><em>Abonnez-vous a notre NewsLetter</em> </li>
+                    <br>
+                    
+                    <li><input type="text" placeholder="votre email" style="padding: 10px; border-radius:15px; box-shadow: 2px 0 2px #df2020;"> </li>
+                </ul>
+            </div>
+            <hr style="margin: 0 5% 0 5%;" class="trait">
+            <ul id="social">
+                <li>Nous suivre</li>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-youtube"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+            </ul>
+        </footer>
+        
+    </div>
+    <script lang="javascript" src="js/index.js"></script>
+</body>
+</html>

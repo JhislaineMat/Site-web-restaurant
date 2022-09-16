@@ -1,0 +1,180 @@
+@media screen and (max-width: 767px) {
+    .navbar{
+       display: flex;
+       justify-content: space-around;
+        
+    }
+    .navbar .nav1{
+        margin-top: -30px;
+    }
+    .navbar .nav2{
+        display: none;
+    }
+    .navbar #logo img{
+        margin-left: 0;
+    }
+    .navbar .nav3 ul #Mb{
+        display: inline-block;
+    }
+    .navbar .nav3 ul #Mb:hover #contents{
+        display: block;
+        border-radius: 13px;
+    }
+    /*fin navbar*/
+    .head{
+        display: block;
+        text-align: center;
+    }
+    .head .head1{
+       width: 100%;
+    }
+    /*.head .head1 h2{
+        margin-top: 100px;
+    }*/
+    .head1 h1, h2{
+        text-align: center;
+    }
+    .head .head1 a{
+        padding: 20px;
+    }
+    .head .head1 ul{
+        width: max-content;
+        margin-top: 10px;
+        
+    }
+    .head .head1 ul li{
+        font-size: 15px;
+        padding: 15px;
+    }
+    .head .head2{
+        margin: 0 auto;
+    }
+    /*fin head*/
+    .bar ul{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .bar ul li{
+
+        width: 43%;
+        margin: 3%;
+    }
+    /*fin bar*/
+    .food ul{
+        text-align: center;
+        margin: 2%;
+        width: 90%;
+    }
+    .service .article{
+        display: block;
+    }
+    .service p{
+        margin: 0 auto;
+        width: 90%;
+    }
+    /*food*/
+    .buger .bug{
+        display: block;
+        margin-left: 5%;
+       
+    }
+    .buger .bug .bug1{
+        margin: 3%;
+        width: 85%;
+    }
+    /*fin buger*/
+    footer .foo{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: left;
+    }
+    footer .foo .fof{
+        width: 90%;
+        margin: 3%;
+    }
+    footer .foo .fof img{
+        margin-left: 0;
+    }
+    footer .trait {
+        display: none;
+    }
+    footer #social {
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 5%;
+
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+         
+     }
+     .navbar .nav1{
+         margin-top: -30px;
+     }
+     .navbar .nav2{
+         display: none;
+     }
+     .navbar #logo img{
+         margin-left: 0;
+     }
+     .navbar .nav3 ul #Mb{
+         display: inline-block;
+     }
+     .navbar .nav3 ul #Mb:hover #contents{
+         display: block;
+         border-radius: 13px;
+     }
+     .head .head1{
+        padding: 5%;
+        margin: 0;
+     }
+     .head .head1 ul{
+        margin-top: 15px;
+     }
+    .head .head1 ul li{
+        font-size: 15px;
+    }
+    .head .head2{
+        margin: auto;
+    }
+    .head .head2 img{
+        width: 95%;
+        margin-top: 100px;
+    }
+    .bar ul {
+        margin-right: 50px;
+    }
+    .bar ul li{
+        width: 45%;
+        margin: 10px;
+    }
+    
+    .buger .bug br{
+        display: none;
+    }
+    .buger .bug .bug1{
+        width: 40%;
+        margin: 10px;
+    }
+    footer .foo{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+   
+    footer .foo .fof{
+        width: 40%;
+        margin: 10px;
+    }
+    footer .foo .fof li img{
+        margin-left: 10%;
+    }
+}
